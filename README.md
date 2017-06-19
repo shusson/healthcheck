@@ -1,0 +1,2 @@
+# healthcheck
+simple mapd healthcheck

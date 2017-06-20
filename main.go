@@ -34,7 +34,7 @@ func main() {
 
 func Index(router *mux.Router, url string) http.HandlerFunc {
 	fn := func(w http.ResponseWriter, r *http.Request) {
-		var jsonStr = []byte(`[1,"connect",1,0,{"1":{"str":""},"2":{"str":""},"3":{"str":""}}]`)
+		var jsonStr = []byte(`[1,"connect",1,0,{"1":{"str":"mapd"},"2":{"str":"HyperInteractive"},"3":{"str":"mapd"}}]`)
 		req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
 
 		if check(err, w) != nil {
